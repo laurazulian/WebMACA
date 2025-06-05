@@ -65,73 +65,52 @@
 
 <section id="servicios" class="py-16 bg-white px-6">
   <h2 class="text-3xl font-bold text-center mb-10 text-[#2552A3]">Servicios que ofrecemos</h2>
-  <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    
-    <!-- Estrategias -->
-    <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="cursor-pointer bg-[#F6AFA8] p-6 rounded-xl shadow hover:shadow-lg transition">
-      <div class="flex items-center gap-4">
-        <svg class="w-8 h-8 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM15 15h6v6h-6z" />
-        </svg>
-        <h3 class="font-bold text-lg">Análisis y desarrollo de estrategias</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Estrategia" class="object-cover h-40 w-full">
+      <div class="p-4 text-center flex-1 flex items-center justify-center">
+        <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
       </div>
     </div>
 
-    <!-- Perfil -->
-    <div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="cursor-pointer bg-[#F6AFA8] p-6 rounded-xl shadow hover:shadow-lg transition">
-      <div class="flex items-center gap-4">
-        <svg class="w-8 h-8 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
-        <h3 class="font-bold text-lg">Optimización de perfil en redes</h3>
+    <div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Perfil" class="object-cover h-40 w-full">
+      <div class="p-4 text-center flex-1 flex items-center justify-center">
+        <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
       </div>
     </div>
 
-    <!-- Contenido -->
-    <div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="cursor-pointer bg-[#F6AFA8] p-6 rounded-xl shadow hover:shadow-lg transition">
-      <div class="flex items-center gap-4">
-        <svg class="w-8 h-8 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M4 4h16v16H4zM4 12h16"/>
-        </svg>
-        <h3 class="font-bold text-lg">Creación de contenido para redes</h3>
+    <div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Contenido" class="object-cover h-40 w-full">
+      <div class="p-4 text-center flex-1 flex items-center justify-center">
+        <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
       </div>
     </div>
 
-    <!-- Identidad -->
-    <div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="cursor-pointer bg-[#F6AFA8] p-6 rounded-xl shadow hover:shadow-lg transition">
-      <div class="flex items-center gap-4">
-        <svg class="w-8 h-8 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M4 4l16 16" />
-        </svg>
-        <h3 class="font-bold text-lg">Rediseño de identidad</h3>
+    <div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Identidad" class="object-cover h-40 w-full">
+      <div class="p-4 text-center flex-1 flex items-center justify-center">
+        <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
       </div>
     </div>
 
-    <!-- Landing page -->
-    <div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="cursor-pointer bg-[#F6AFA8] p-6 rounded-xl shadow hover:shadow-lg transition">
-      <div class="flex items-center gap-4">
-        <svg class="w-8 h-8 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M3 4h18v16H3zM3 9h18" />
-        </svg>
-        <h3 class="font-bold text-lg">Landing page</h3>
+    <div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Landing" class="object-cover h-40 w-full">
+      <div class="p-4 text-center flex-1 flex items-center justify-center">
+        <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
       </div>
     </div>
 
-    <!-- Merch -->
-    <div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="cursor-pointer bg-[#F6AFA8] p-6 rounded-xl shadow hover:shadow-lg transition">
-      <div class="flex items-center gap-4">
-        <svg class="w-8 h-8 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M12 1v22M5 5h14v14H5z"/>
-        </svg>
-        <h3 class="font-bold text-lg">Diseño gráfico y merch</h3>
+    <div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Merch" class="object-cover h-40 w-full">
+      <div class="p-4 text-center flex-1 flex items-center justify-center">
+        <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
       </div>
     </div>
 
   </div>
 </section>
-
-
 
   <!-- Planes -->
 <!-- Planes -->
