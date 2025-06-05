@@ -88,3 +88,39 @@ const popupOverlay = document.getElementById('popup-overlay');
     menu.classList.toggle('hidden');
     menu.classList.toggle('flex');
   });
+
+/*const carousel = document.getElementById('carousel-servicios');
+  const cards = carousel.querySelectorAll('div.snap-start');
+
+  let currentIndex = 0;
+
+  function scrollCarousel(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex >= cards.length) currentIndex = cards.length - 1;
+
+    const targetCard = cards[currentIndex];
+    if (targetCard) {
+      targetCard.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+    }
+  }*/
+
+  const carousel = document.getElementById('carousel-servicios');
+  const cards = carousel.querySelectorAll('.snap-start');
+  let currentIndex = 0;
+
+  function scrollCarousel(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex >= cards.length) currentIndex = cards.length - 1;
+
+    const card = cards[currentIndex];
+    if (card) {
+      card.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'start',
+        block: 'nearest'
+      });
+    }
+  }

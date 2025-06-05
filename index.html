@@ -65,50 +65,68 @@
 
 <section id="servicios" class="py-16 bg-white px-6">
   <h2 class="text-3xl font-bold text-center mb-10 text-[#2552A3]">Servicios que ofrecemos</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  <div class="relative overflow-hidden max-w-6xl mx-auto">
+    <div id="carousel-servicios" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory">
 
-    <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Estrategia" class="object-cover h-40 w-full">
-      <div class="p-4 text-center flex-1 flex items-center justify-center">
-        <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
+      <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
+        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <img src="https://via.placeholder.com/400x200?text=Estrategia" alt="Estrategia" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
+          </div>
+        </div>
       </div>
+
+      <div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
+        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <img src="https://via.placeholder.com/400x200?text=Perfil" alt="Perfil" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
+          </div>
+        </div>
+      </div>
+
+      <div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
+        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <img src="https://via.placeholder.com/400x200?text=Contenido" alt="Contenido" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
+          </div>
+        </div>
+      </div>
+
+      <div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
+        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <img src="https://via.placeholder.com/400x200?text=Identidad" alt="Identidad" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
+          </div>
+        </div>
+      </div>
+
+      <div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
+        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <img src="https://via.placeholder.com/400x200?text=Landing" alt="Landing" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
+          </div>
+        </div>
+      </div>
+
+      <div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
+        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <img src="https://via.placeholder.com/400x200?text=Merch" alt="Merch" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Perfil" class="object-cover h-40 w-full">
-      <div class="p-4 text-center flex-1 flex items-center justify-center">
-        <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
-      </div>
-    </div>
-
-    <div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Contenido" class="object-cover h-40 w-full">
-      <div class="p-4 text-center flex-1 flex items-center justify-center">
-        <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
-      </div>
-    </div>
-
-    <div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Identidad" class="object-cover h-40 w-full">
-      <div class="p-4 text-center flex-1 flex items-center justify-center">
-        <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
-      </div>
-    </div>
-
-    <div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Landing" class="object-cover h-40 w-full">
-      <div class="p-4 text-center flex-1 flex items-center justify-center">
-        <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
-      </div>
-    </div>
-
-    <div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="cursor-pointer bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-      <img src="/Fotos/LOGO-VERTICAL-AZUL.png" alt="Merch" class="object-cover h-40 w-full">
-      <div class="p-4 text-center flex-1 flex items-center justify-center">
-        <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
-      </div>
-    </div>
-
+    <!-- Botones -->
+   <button onclick="scrollCarousel(-1)" class="hidden md:flex absolute top-1/2 left-0 transform -translate-y-1/2 z-10 bg-[#2552A3] text-white p-3 rounded-r hover:bg-[#1e458c]">‹</button>
+    <button onclick="scrollCarousel(1)" class="hidden md:flex absolute top-1/2 right-0 transform -translate-y-1/2 z-10 bg-[#2552A3] text-white p-3 rounded-l hover:bg-[#1e458c]">›</button>
   </div>
 </section>
 
