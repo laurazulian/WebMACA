@@ -55,11 +55,17 @@
 
 
 <!-- Servicios -->
- <div id="popup-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center">
-  <div class="bg-white p-6 rounded shadow-lg relative max-w-md">
-    <button id="popup-close" class="absolute top-2 right-2 text-gray-700 font-bold text-xl">&times;</button>
-    <h3 id="popup-title" class="font-bold text-xl mb-4"></h3>
-    <p id="popup-content"></p>
+
+<div class="card relative">
+
+  <div id="popup-overlay" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+    <div id="popup" class="bg-white p-8 rounded-lg shadow-xl relative max-w-md w-full mx-4 transform transition-transform duration-300 scale-95 opacity-0">
+      <button id="popup-close" 
+              class="absolute top-3 right-3 text-gray-600 hover:text-red-500 font-bold text-2xl transition-colors" 
+              aria-label="Cerrar popup">&times;</button>
+      <h3 id="popup-title" class="font-bold text-2xl mb-4 text-[#2552A3] border-b-2 border-[#2552A3] pb-2"></h3>
+      <p id="popup-content" class="text-gray-700 leading-relaxed text-base"></p>
+    </div>
   </div>
 </div>
 
@@ -68,57 +74,59 @@
   <div class="relative overflow-hidden max-w-6xl mx-auto">
     <div id="carousel-servicios" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory">
 
-      <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
-        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-          <img src="https://via.placeholder.com/400x200?text=Estrategia" alt="Estrategia" class="object-cover h-40 w-full">
-          <div class="p-4 text-center flex-1 flex items-center justify-center">
-            <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
-          </div>
-        </div>
-      </div>
+      <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+    <img src="https://via.placeholder.com/400x200?text=Estrategia" alt="Estrategia" class="object-cover h-40 w-full">
+    <div class="p-4 text-center flex-1 flex items-center justify-center">
+      <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
+    </div>
+  </div>
+</div>
 
-      <div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
-        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-          <img src="https://via.placeholder.com/400x200?text=Perfil" alt="Perfil" class="object-cover h-40 w-full">
-          <div class="p-4 text-center flex-1 flex items-center justify-center">
-            <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
-          </div>
-        </div>
-      </div>
+<div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+    <img src="https://via.placeholder.com/400x200?text=Perfil" alt="Perfil" class="object-cover h-40 w-full">
+    <div class="p-4 text-center flex-1 flex items-center justify-center">
+      <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
+    </div>
+  </div>
+</div>
 
-      <div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
-        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-          <img src="https://via.placeholder.com/400x200?text=Contenido" alt="Contenido" class="object-cover h-40 w-full">
-          <div class="p-4 text-center flex-1 flex items-center justify-center">
-            <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
-          </div>
-        </div>
-      </div>
+<div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+    <img src="https://via.placeholder.com/400x200?text=Contenido" alt="Contenido" class="object-cover h-40 w-full">
+    <div class="p-4 text-center flex-1 flex items-center justify-center">
+      <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
+    </div>
+  </div>
+</div>
 
-      <div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
-        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-          <img src="https://via.placeholder.com/400x200?text=Identidad" alt="Identidad" class="object-cover h-40 w-full">
-          <div class="p-4 text-center flex-1 flex items-center justify-center">
-            <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
-          </div>
-        </div>
-      </div>
+<div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+    <img src="https://via.placeholder.com/400x200?text=Identidad" alt="Identidad" class="object-cover h-40 w-full">
+    <div class="p-4 text-center flex-1 flex items-center justify-center">
+      <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
+    </div>
+  </div>
+</div>
 
-      <div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
-        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-          <img src="https://via.placeholder.com/400x200?text=Landing" alt="Landing" class="object-cover h-40 w-full">
-          <div class="p-4 text-center flex-1 flex items-center justify-center">
-            <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
-          </div>
-        </div>
-      </div>
+<div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+    <img src="https://via.placeholder.com/400x200?text=Landing" alt="Landing" class="object-cover h-40 w-full">
+    <div class="p-4 text-center flex-1 flex items-center justify-center">
+      <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
+    </div>
+  </div>
+</div>
 
-      <div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start">
-        <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-          <img src="https://via.placeholder.com/400x200?text=Merch" alt="Merch" class="object-cover h-40 w-full">
-          <div class="p-4 text-center flex-1 flex items-center justify-center">
-            <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
-          </div>
+<div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+    <img src="https://via.placeholder.com/400x200?text=Merch" alt="Merch" class="object-cover h-40 w-full">
+    <div class="p-4 text-center flex-1 flex items-center justify-center">
+      <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
+    </div>
+  </div>
+</div>
         </div>
       </div>
 
@@ -218,16 +226,6 @@
 
   </div>
 </section>
-
-<!-- Popups para servicios -->
-<div id="popup-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-  <div class="bg-white p-6 rounded-xl shadow-lg max-w-lg w-full relative">
-    <button id="popup-close" class="absolute top-2 right-2 text-gray-600 hover:text-black">&times;</button>
-    <h3 id="popup-title" class="text-2xl font-bold text-[#2552A3] mb-4"></h3>
-    <p id="popup-content" class="text-gray-700"></p>
-  </div>
-</div>
-
 <!-- Nosotras - Integrantes -->
 <section id="nosotras" class="py-16 bg-blue-100 px-6">
   <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">Nosotras</h2>
