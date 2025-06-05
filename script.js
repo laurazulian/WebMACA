@@ -51,3 +51,40 @@
   // Hacemos que showPopup sea accesible globalmente para el onclick inline
   window.showPopup = showPopup;
 });
+const popupOverlay = document.getElementById('popup-overlay');
+  const popupTitle = document.getElementById('popup-title');
+  const popupContent = document.getElementById('popup-content');
+  const popupClose = document.getElementById('popup-close');
+
+  function showPopup(title, content) {
+    popupTitle.textContent = title;
+    popupContent.textContent = content;
+    popupOverlay.classList.remove('hidden');
+    popupOverlay.classList.add('flex');
+  }
+
+  function closePopup() {
+    popupOverlay.classList.add('hidden');
+    popupOverlay.classList.remove('flex');
+  }
+
+  popupClose.addEventListener('click', closePopup);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closePopup();
+    }
+  });
+
+  popupOverlay.addEventListener('click', function (e) {
+    if (e.target === popupOverlay) {
+      closePopup();
+    }
+  });
+
+  // Toggle menu mobile
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  });

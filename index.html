@@ -15,20 +15,24 @@
 <body class="font-sans text-gray-800">
 
   <!-- Navegación fija -->
-  <header class="fixed top-0 left-0 w-full bg-blue-800 text-white shadow z-50">
-    <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <span class="font-bold text-lg">MACA</span>
-      <ul class="flex gap-4 text-sm">
-        <li><a href="#" class="hover:underline">Inicio</a></li>
-        <li><a href="#servicios" class="hover:underline">Servicios</a></li>
-        <li><a href="#planes" class="hover:underline">Planes</a></li>
-        <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
-        <li><a href="#nosotras" class="hover:underline">Nosotras</a></li>
-        <li><a href="#contacto" class="hover:underline">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
+ <header class="fixed top-0 left-0 w-full bg-[#2552A3] text-white shadow z-50">
+  <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <span class="font-bold text-lg">MACA</span>
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <ul id="nav-menu" class="hidden md:flex gap-4 text-sm md:items-center md:static absolute top-16 left-0 bg-[#2552A3] w-full md:w-auto md:bg-transparent flex-col md:flex-row p-4 md:p-0">
+      <li><a href="#" class="hover:underline block py-1">Inicio</a></li>
+      <li><a href="#servicios" class="hover:underline block py-1">Servicios</a></li>
+      <li><a href="#planes" class="hover:underline block py-1">Planes</a></li>
+      <li><a href="#portfolio" class="hover:underline block py-1">Portfolio</a></li>
+      <li><a href="#nosotras" class="hover:underline block py-1">Nosotras</a></li>
+      <li><a href="#contacto" class="hover:underline block py-1">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
   <!-- Espaciador para nav fija -->
   <div class="h-16"></div>
 
@@ -278,7 +282,24 @@
       <p id="mensaje-exito" class="text-green-600 text-center hidden">¡Gracias por contactarnos! Te responderemos pronto.</p>
     </form>
   </section>
-
+  <!-- Footer -->
+<footer class="bg-[#2552A3] text-white py-6 mt-16">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm">© 2025 MACA - Todos los derechos reservados</p>
+    <div class="flex gap-4 items-center">
+      <a href="https://www.instagram.com/maca" target="_blank" class="hover:opacity-75">
+        <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1 1 0 110 2 1 1 0 010-2z"/>
+        </svg>
+      </a>
+      <a href="https://wa.me/5492634357935" target="_blank" class="hover:opacity-75">
+        <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+          <path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 0 5.373 0 12a11.957 11.957 0 001.578 5.86L0 24l6.37-1.674A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12a11.88 11.88 0 00-3.48-8.52zM12 22a9.932 9.932 0 01-5.091-1.396l-.363-.215-3.78 1L4.61 17.5l-.235-.387A9.932 9.932 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.426-7.695c-.297-.149-1.757-.867-2.03-.966-.273-.099-.472-.148-.671.15-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.476-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.671-1.612-.919-2.211-.242-.582-.49-.504-.671-.513l-.572-.011c-.198 0-.52.074-.792.372s-1.04 1.017-1.04 2.479 1.064 2.872 1.212 3.071c.149.198 2.095 3.197 5.08 4.482.71.306 1.262.489 1.693.626.71.226 1.356.194 1.867.118.57-.085 1.757-.718 2.005-1.41.248-.69.248-1.282.173-1.41-.075-.129-.273-.198-.57-.347z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
    <script src="script.js"></script>
 </body>
 </html>
