@@ -56,87 +56,118 @@
 
 <!-- Servicios -->
 
-<div class="card relative">
-
-  <div id="popup-overlay" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
-    <div id="popup" class="bg-white p-8 rounded-lg shadow-xl relative max-w-md w-full mx-4 transform transition-transform duration-300 scale-95 opacity-0">
-      <button id="popup-close" 
-              class="absolute top-3 right-3 text-gray-600 hover:text-red-500 font-bold text-2xl transition-colors" 
-              aria-label="Cerrar popup">&times;</button>
-      <h3 id="popup-title" class="font-bold text-2xl mb-4 text-[#2552A3] border-b-2 border-[#2552A3] pb-2"></h3>
-      <p id="popup-content" class="text-gray-700 leading-relaxed text-base"></p>
-    </div>
+<div id="popup-overlay" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+  <div id="popup" class="bg-white p-8 rounded-lg shadow-xl relative max-w-md w-full mx-4 transform transition-transform duration-300 scale-95 opacity-0">
+    <button id="popup-close"
+      class="absolute top-3 right-3 text-gray-600 hover:text-red-500 font-bold text-2xl transition-colors"
+      aria-label="Cerrar popup">&times;</button>
+    <h3 id="popup-title" class="font-bold text-2xl mb-4 text-[#2552A3] border-b-2 border-[#2552A3] pb-2"></h3>
+    <p id="popup-content" class="text-gray-700 leading-relaxed text-base"></p>
   </div>
 </div>
 
-<section id="servicios" class="py-16 bg-white px-6">
-  <h2 class="text-3xl font-bold text-center mb-10 text-[#2552A3]">Servicios que ofrecemos</h2>
+<section id="servicios" class="py-20 bg-gradient-to-b from-white to-[#e0f2f1] px-6 border-y-4 border-[#A2D4C5]">
+  <div class="max-w-4xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-extrabold text-[#2552A3] mb-4">Servicios que ofrecemos</h2>
+    <p class="text-lg text-gray-600">Desde la estrategia hasta la ejecución, acompañamos tu marca con soluciones personalizadas y creativas.</p>
+  </div>
   <div class="relative overflow-hidden max-w-6xl mx-auto">
     <div id="carousel-servicios" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory">
 
+      <!-- Card Template -->
       <div onclick="showPopup('Análisis y desarrollo de estrategias', 'Evaluamos tu presencia digital actual. Estudiamos el perfil de la competencia. Identificamos oportunidades. Definimos objetivos y estrategia.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
-  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-    <img src="https://via.placeholder.com/400x200?text=Estrategia" alt="Estrategia" class="object-cover h-40 w-full">
-    <div class="p-4 text-center flex-1 flex items-center justify-center">
-      <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
-    </div>
-  </div>
-</div>
+        <div class="bg-[#F6AFA8] h-full rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <div class="flex items-center justify-center py-4">
+            <svg class="w-10 h-10 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <path d="M9 5l7 7-7 7" />
+</svg>
+          </div>
+          <img src="https://via.placeholder.com/400x200?text=Estrategia" alt="Estrategia" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Análisis y desarrollo de estrategias</h3>
+          </div>
+        </div>
+      </div>
 
-<div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
-  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-    <img src="https://via.placeholder.com/400x200?text=Perfil" alt="Perfil" class="object-cover h-40 w-full">
-    <div class="p-4 text-center flex-1 flex items-center justify-center">
-      <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
-    </div>
-  </div>
-</div>
+      <div onclick="showPopup('Optimización de perfil en redes', 'Organizamos tu feed, bio, links e historias destacadas. Alineamos tu perfil con tu estética.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+        <div class="bg-[#F6AFA8] h-full rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <div class="flex items-center justify-center py-4">
+            <svg class="w-10 h-10 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <path d="M3 12h18M3 6h18M3 18h18" />
+</svg>
+          </div>
+          <img src="https://via.placeholder.com/400x200?text=Perfil" alt="Perfil" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Optimización de perfil en redes</h3>
+          </div>
+        </div>
+      </div>
 
-<div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
-  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-    <img src="https://via.placeholder.com/400x200?text=Contenido" alt="Contenido" class="object-cover h-40 w-full">
-    <div class="p-4 text-center flex-1 flex items-center justify-center">
-      <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
-    </div>
-  </div>
-</div>
+      <div onclick="showPopup('Creación de contenido para redes', 'Planificación mensual, diseño de post e historias, producción de videos, copys, publicación y gestión de mensajes.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+        <div class="bg-[#F6AFA8] h-full rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <div class="flex items-center justify-center py-4">
+            <svg class="w-10 h-10 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <path d="M4 4h16v16H4zM4 12h16" />
+</svg>
+          </div>
+          <img src="https://via.placeholder.com/400x200?text=Contenido" alt="Contenido" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Creación de contenido para redes</h3>
+          </div>
+        </div>
+      </div>
 
-<div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
-  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-    <img src="https://via.placeholder.com/400x200?text=Identidad" alt="Identidad" class="object-cover h-40 w-full">
-    <div class="p-4 text-center flex-1 flex items-center justify-center">
-      <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
-    </div>
-  </div>
-</div>
+      <div onclick="showPopup('Rediseño de identidad', 'Evaluamos tu marca y proponemos mejoras visuales con paleta, tipografías y piezas gráficas estandarizadas.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+        <div class="bg-[#F6AFA8] h-full rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <div class="flex items-center justify-center py-4">
+            <svg class="w-10 h-10 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="10" />
+  <path d="M4 4l16 16" />
+</svg>
+          </div>
+          <img src="https://via.placeholder.com/400x200?text=Identidad" alt="Identidad" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Rediseño de identidad</h3>
+          </div>
+        </div>
+      </div>
 
-<div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
-  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-    <img src="https://via.placeholder.com/400x200?text=Landing" alt="Landing" class="object-cover h-40 w-full">
-    <div class="p-4 text-center flex-1 flex items-center justify-center">
-      <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
-    </div>
-  </div>
-</div>
+      <div onclick="showPopup('Landing page', 'Diseño y programación de una web simple conectada a tus redes y medios de contacto.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+        <div class="bg-[#F6AFA8] h-full rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <div class="flex items-center justify-center py-4">
+            <svg class="w-10 h-10 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <path d="M3 4h18v16H3zM3 9h18" />
+</svg>
+          </div>
+          <img src="https://via.placeholder.com/400x200?text=Landing" alt="Landing" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Landing page</h3>
+          </div>
+        </div>
+      </div>
 
-<div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
-  <div class="bg-[#F6AFA8] rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
-    <img src="https://via.placeholder.com/400x200?text=Merch" alt="Merch" class="object-cover h-40 w-full">
-    <div class="p-4 text-center flex-1 flex items-center justify-center">
-      <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
-    </div>
-  </div>
-</div>
+      <div onclick="showPopup('Diseño gráfico y merch', 'Diseñamos piezas corporativas, packaging y productos con identidad profesional para tu marca.')" class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4 snap-start cursor-pointer">
+        <div class="bg-[#F6AFA8] h-full rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col">
+          <div class="flex items-center justify-center py-4">
+            <svg class="w-10 h-10 text-[#2552A3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <path d="M12 1v22M5 5h14v14H5z" />
+</svg>
+          </div>
+          <img src="https://via.placeholder.com/400x200?text=Merch" alt="Merch" class="object-cover h-40 w-full">
+          <div class="p-4 text-center flex-1 flex items-center justify-center">
+            <h3 class="font-bold text-lg text-[#2552A3]">Diseño gráfico y merch</h3>
+          </div>
         </div>
       </div>
 
     </div>
 
-    <!-- Botones -->
-   <button onclick="scrollCarousel(-1)" class="hidden md:flex absolute top-1/2 left-0 transform -translate-y-1/2 z-10 bg-[#2552A3] text-white p-3 rounded-r hover:bg-[#1e458c]">‹</button>
+    <!-- Botones flotantes -->
+    <button onclick="scrollCarousel(-1)" class="hidden md:flex absolute top-1/2 left-0 transform -translate-y-1/2 z-10 bg-[#2552A3] text-white p-3 rounded-r hover:bg-[#1e458c]">‹</button>
     <button onclick="scrollCarousel(1)" class="hidden md:flex absolute top-1/2 right-0 transform -translate-y-1/2 z-10 bg-[#2552A3] text-white p-3 rounded-l hover:bg-[#1e458c]">›</button>
   </div>
 </section>
+
 
   <!-- Planes -->
 <!-- Planes -->
@@ -252,49 +283,53 @@
   </div>
 </section>
 
-<!-- Valores y filosofía -->
-<section id="valores" class="py-16 bg-white px-6">
-  <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">Nuestros valores y filosofía</h2>
-  <div class="max-w-3xl mx-auto text-center text-blue-900">
-    <ul class="list-disc list-inside space-y-3 text-lg">
+<section id="valores-contacto" class="py-12 bg-white px-6 max-w-4xl mx-auto">
+  <!-- Contenedor de títulos en fila -->
+  <div class="grid md:grid-cols-2 gap-10 mb-8">
+    <h2 class="text-3xl font-bold text-blue-800 text-left">Nuestros valores y filosofía</h2>
+    <h3 class="text-3xl font-bold text-blue-800 text-left">Contacto</h3>
+  </div>
+
+  <!-- Contenedor de contenido en dos columnas -->
+  <div class="grid md:grid-cols-2 gap-10">
+    <ul class="list-disc list-inside text-blue-900 text-lg space-y-2 max-w-md mx-auto md:mx-0">
       <li>Atención personalizada</li>
       <li>Eficiencia</li>
       <li>Contenidos al servicio de la estrategia</li>
     </ul>
+
+    <div class="text-center md:text-left">
+      <p class="mb-4 text-lg">Primera reunión, auditoría o asesoría <span class="font-bold text-green-600">GRATIS</span></p>
+      <a href="https://forms.gle/tu-link-a-google-forms" target="_blank" rel="noopener noreferrer"
+         class="inline-block bg-blue-800 text-white px-6 py-3 rounded hover:bg-blue-900 transition mb-6">
+        Completar formulario de contacto
+      </a>
+
+      <div class="flex justify-center md:justify-start gap-6 text-blue-800">
+        <a href="https://www.instagram.com/maca" target="_blank" rel="noopener noreferrer" aria-label="Instagram" 
+           class="hover:text-pink-500 transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1 1 0 110 2 1 1 0 010-2z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/5492634357935" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" 
+           class="hover:text-green-600 transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 0 5.373 0 12a11.957 11.957 0 001.578 5.86L0 24l6.37-1.674A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12a11.88 11.88 0 00-3.48-8.52zM12 22a9.932 9.932 0 01-5.091-1.396l-.363-.215-3.78 1L4.61 17.5l-.235-.387A9.932 9.932 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.426-7.695c-.297-.149-1.757-.867-2.03-.966-.273-.099-.472-.148-.671.15-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.476-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.671-1.612-.919-2.211-.242-.582-.49-.504-.671-.513l-.572-.011c-.198 0-.52.074-.792.372s-1.04 1.017-1.04 2.479 1.064 2.872 1.212 3.071c.149.198 2.095 3.197 5.08 4.482.71.306 1.262.489 1.693.626.71.226 1.356.194 1.867.118.57-.085 1.757-.718 2.005-1.41.248-.69.248-1.282.173-1.41-.075-.129-.273-.198-.57-.347z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
-
-  <!-- Contacto -->
-  <section id="contacto" class="py-16 bg-white px-6">
-    <h2 class="text-3xl font-bold text-center mb-6 text-blue-800">Contacto</h2>
-    <p class="text-center mb-6">Primera reunión, auditoría o asesoría <span class="font-bold text-green-600">GRATIS</span></p>
-    <form id="form-contacto" class="max-w-xl mx-auto grid gap-4">
-      <input type="text" id="nombre" placeholder="Nombre" class="border p-3 rounded w-full" required />
-      <input type="email" id="email" placeholder="Email" class="border p-3 rounded w-full" required />
-      <textarea id="mensaje" placeholder="Mensaje" class="border p-3 rounded w-full" rows="4" required></textarea>
-      <button type="submit" class="bg-blue-800 text-white py-2 rounded hover:bg-blue-900">Enviar</button>
-      <p id="mensaje-exito" class="text-green-600 text-center hidden">¡Gracias por contactarnos! Te responderemos pronto.</p>
-    </form>
-  </section>
   <!-- Footer -->
 <footer class="bg-[#2552A3] text-white py-6 mt-16">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="max-w-7xl mx-auto px-4 flex justify-center items-center">
     <p class="text-sm">© 2025 MACA - Todos los derechos reservados</p>
-    <div class="flex gap-4 items-center">
-      <a href="https://www.instagram.com/maca" target="_blank" class="hover:opacity-75">
-        <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
-          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1 1 0 110 2 1 1 0 010-2z"/>
-        </svg>
-      </a>
-      <a href="https://wa.me/5492634357935" target="_blank" class="hover:opacity-75">
-        <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
-          <path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 0 5.373 0 12a11.957 11.957 0 001.578 5.86L0 24l6.37-1.674A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12a11.88 11.88 0 00-3.48-8.52zM12 22a9.932 9.932 0 01-5.091-1.396l-.363-.215-3.78 1L4.61 17.5l-.235-.387A9.932 9.932 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.426-7.695c-.297-.149-1.757-.867-2.03-.966-.273-.099-.472-.148-.671.15-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.476-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.671-1.612-.919-2.211-.242-.582-.49-.504-.671-.513l-.572-.011c-.198 0-.52.074-.792.372s-1.04 1.017-1.04 2.479 1.064 2.872 1.212 3.071c.149.198 2.095 3.197 5.08 4.482.71.306 1.262.489 1.693.626.71.226 1.356.194 1.867.118.57-.085 1.757-.718 2.005-1.41.248-.69.248-1.282.173-1.41-.075-.129-.273-.198-.57-.347z"/>
-        </svg>
-      </a>
-    </div>
   </div>
 </footer>
+
    <script src="script.js"></script>
 </body>
 </html>

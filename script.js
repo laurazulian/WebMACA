@@ -75,17 +75,33 @@ const popupOverlay = document.getElementById('popup-overlay');
   const popupContent = document.getElementById('popup-content');
   const popupClose = document.getElementById('popup-close');
 
-  function showPopup(title, content) {
-    popupTitle.textContent = title;
-    popupContent.textContent = content;
-    popupOverlay.classList.remove('hidden');
-    popupOverlay.classList.add('flex');
-  }
+function showPopup(title, content) {
+  popupTitle.textContent = title;
+  popupContent.textContent = content;
 
-  function closePopup() {
+  // Reset clases antes de mostrar
+  popup.classList.remove('opacity-0', 'scale-95');
+  popup.classList.add('opacity-100', 'scale-100');
+
+  popupOverlay.classList.remove('hidden');
+  requestAnimationFrame(() => {
+    popupOverlay.classList.add('opacity-100');
+    popupOverlay.classList.remove('opacity-0');
+  });
+}
+
+function closePopup() {
+  popupOverlay.classList.remove('opacity-100');
+  popupOverlay.classList.add('opacity-0');
+
+  popup.classList.remove('opacity-100', 'scale-100');
+  popup.classList.add('opacity-0', 'scale-95');
+
+  setTimeout(() => {
     popupOverlay.classList.add('hidden');
-    popupOverlay.classList.remove('flex');
-  }
+  }, 300);
+}
+
 
   popupClose.addEventListener('click', closePopup);
 
@@ -125,11 +141,11 @@ const popupOverlay = document.getElementById('popup-overlay');
     }
   }*/
 
-  const carousel = document.getElementById('carousel-servicios');
-  const cards = carousel.querySelectorAll('.snap-start');
+const carousel = document.getElementById('carousel-servicios');
   let currentIndex = 0;
 
   function scrollCarousel(direction) {
+    const cards = carousel.querySelectorAll('.snap-start'); // actualizar dinámicamente
     currentIndex += direction;
     if (currentIndex < 0) currentIndex = 0;
     if (currentIndex >= cards.length) currentIndex = cards.length - 1;
